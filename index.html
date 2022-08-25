@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Best Five</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+<body class="bg-slate-700">
+    <header>
+        <section class="px-32 py-32 bg-slate-900 ">
+            <div>
+                <h1 class="text-orange-500 text-center text-6xl decoration-dashed">Select Your Best Five</h1>
+                <p class="text-white text-center text-2xl mt-6 mx-24 my-24">Amet minim mollit non deserunt ullamco est
+                    sit
+                    aliqua
+                    dolor do amet sint. Velit
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                    nostrud amet.</p>
+            </div>
+        </section>
+    </header>
+    <main class="bg-slate-700">
+        <section class="mt-12">
+            <div class="grid grid-cols-4 gap-1 w-9/12 mx-auto text-white">
+                <div class=" p-8 rounded-xl">
+                    <img src="images//messi.webp" class="w-full h-40" alt="">
+                    <h4 class="text-2xl bg-sky">Leonel Messi</h4>
+                    <p class="text-2xl">36 Goals .<span id="deposite-total">120 Assist</span></p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6 text-white font-medium rounded-lg "
+                        onclick="addToSelect(this)">Select</button>
+                </div>
+                <div class=" p-8 rounded-xl">
+                    <img src="images//neymar.jpg" class="w-full h-40" alt="">
+                    <h4 class="text-2xl bg-sky">Neymar Jr</h4>
+                    <p class="text-2xl">26 Goals .<span id="deposite-total">110 Assist</span></p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6 text-white font-medium rounded-lg"
+                        onclick="addToSelect(this)">Select</button>
+                </div>
+                <div class=" p-8 rounded-xl">
+                    <img src="images//Dimaria.jpg" class="w-full h-40" alt="">
+                    <h4 class="text-2xl bg-sky">Di Maria</h4>
+                    <p class="text-2xl">30 Goals .<span id="deposite-total">105 Assist</span></p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6 text-white font-medium rounded-lg"
+                        onclick="addToSelect(this)">Select</button>
+                </div>
+                <div class="bg-black text-white">
+                    <table class="table table-zebra w-full p-6 rounded-xl bg-black text-black text-center">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Selected <span>0</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="player-list">
+                            <tr>
+                                <th>1</th>
+                                <td>Lionel Messi</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12">
+            <div class="grid grid-cols-4 gap-1 w-9/12 mx-auto text-white">
+                <div class=" p-8 rounded-xl">
+                    <img src="images//kane.jpg" class="w-full h-40" alt="">
+                    <h4 class="text-2xl bg-sky">Harry Kane</h4>
+                    <p class="text-2xl">21 Goals .<span id="deposite-total">80 Assist</span></p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6 text-white font-medium rounded-lg"
+                        onclick="addToSelect(this)">Select</button>
+                </div>
+                <div class=" p-8 rounded-xl">
+                    <img src="images//ramos.jpg" class="w-full h-40" alt="">
+                    <h4 class="text-2xl bg-sky">Sarjio Ramos</h4>
+                    <p class="text-2xl">12 Goals .<span id="deposite-total">30Assist</span></p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6 text-white font-medium rounded-lg"
+                        onclick="addToSelect(this)">Select</button>
+                </div>
+                <div class=" p-8 rounded-xl">
+                    <img src="images//alison.webp" class="w-full h-40" alt="">
+                    <h4 class="text-2xl bg-sky">Alison Brekar</h4>
+                    <p class="text-2xl">20 Goals .<span id="deposite-total">30 Assist</span></p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6 text-white font-medium rounded-lg"
+                        onclick="addToSelect(this)">Select</button>
+                </div>
+                <div class=" p-8 rounded-xl bg-black text-white ">
+                    <h4 class="text-2xl bg-sky text-center">Budget</h4>
+                    <p>per Player <span class="w-8 mx-12"><input type=""></span> </p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6 text-white font-medium rounded-lg tex">Calculate</button>
+                    <p>Player Expence $<span>5000</span></p>
+                    <p>Manager <span class="w-8 mx-12 "><input type="2000"></span></p>
+                    <p>Coach <span class="w-8 mx-12"><input type="4000"></span></p>
+                    <button id="btn-select"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 mt-6  text-white font-medium rounded-lg">Calculate
+                        Total</button>
+                    <p>Total $<span>11000</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/select.js"></script>
+
+</body>
+
+</html>
